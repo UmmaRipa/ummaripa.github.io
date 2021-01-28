@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;800&display=swap');
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+body{
+	font-family:'Poppins', sans-serif;
+	background:#BF97D3;
+	color: #000;
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+a{
+	color: #262626;
+	text-decoration: none;
+}
+/*@media(min-width: 540px){
+		.overlay {
+	display: flex;
+}
+@media(min-width: 540px){
+		.main-content {
+	display: flex;
+	}
+*/
+
+.container{
+	    
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	width: 90%;
+	margin: auto;
+	margin :2% 1% 0% 5% ;
+}
+
+
+/* Banner Area Start*/
+.banner-area{
+	background: url("images/sky.jpg") no-repeat center center/cover;
+	height: 400px;
+	width: 100%;
+    position: relative;
+    display: flex;
+
+}
+.banner-area:after{
+	background: linear-gradient(90deg, #FECBD2 0%, #BF97D3 50%);
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    
+}
+.banner-content{
+	
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+       
+	
+}
+
+.logo{
+	background: url("images/logo.jpg") no-repeat center center/cover;
+	position: absolute;
+    left: 60px;
+    top: 30px;
+    
+}
+.banner-text{
+	display: flex;
+	flex-direction: column; 
+	align-items:  center;
+	text-align: center;
+	justify-content: center; 
+	flex-basis: 80%;
+	
+}
+.banner-text h1{
+	font-family: 'Poppins';
+    font-weight: 100;
+	margin-bottom: 2px;
+	font-size: 80px;
+	
+
+}
+.banner-text h2{
+	font-size:20px;
+	font-weight: normal;
+	}
+.button-link {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;			
+  border: 1px solid #BF97D3;
+  border-radius: 50px;
+  color: #6B4fbb;
+  padding: 6px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #FCD3E1; 
+  background-image: linear-gradient(to right, #FCD3E1 , #BF97D3);
+}
+.button-link:hover {
+	opacity: 0.9;
+}  
+
+/* Maincontent Area Start*/
+.main-content{
+	display: flex;
+	width: 100%;
+	height: 400px;
+}
+.content-text{
+	
+	flex-basis: 50%;
+	padding: 60px 60px;
+}
+.content-text h2{
+    font-size: 35px;
+    font-weight: normal;
+    color: #777;
+    margin-bottom: 15px;
+}
+.content-image{
+	
+	background:url("images/dawnsky.jpg");
+	background-size: cover;
+    height: 300px;
+    width: 35%;
+    background-position: center;
+
+    margin-top: 41px;
+    margin-left: 87px;
+    }
+.content-text p, .footer-text p {
+    margin-bottom: 25px;
+}
+
+
+/* Footer Area Start*/
+.footer-image{
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	height: 400px;
+	background: url("images/inrainsky.jpg") no-repeat center center/cover;
+	background-size: cover;
+    background-position:center;
+
+    
+}
+.footer-text {
+    flex-basis: 50%;
+    padding: 90px 65px;
+    color: #fff;
+    }
+.footer-text h2{
+ 	font-size: 35px;
+    font-weight: normal;
+    color: #fff;
+    margin-bottom: 15px;
+    margin-top: -18px;
+}
+.button-bottom {
+  border: 1px solid #fff;
+  border-radius: 50px;
+  color: #fff;
+  padding: 6px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  
+}
