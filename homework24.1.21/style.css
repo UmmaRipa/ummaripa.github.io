@@ -4,7 +4,7 @@
 	margin: 0;
 	padding: 0;
 	
-}
+    }
 
 body{
 	font-family:'Poppins', sans-serif;
@@ -21,22 +21,26 @@ a{
 /*@media(min-width: 540px){
 		.overlay {
 	display: flex;
+    flex-wrap: wrap;
 }
 @media(min-width: 540px){
 		.main-content {
 	display: flex;
-	}
-*/
+    flex-wrap: wrap;
+	}*/
+
 
 .container{
-	    
+	position: relative;    
 	display: flex;
 	flex-direction: column;
 	background-color: white;
 	width: 90%;
 	margin: auto;
 	margin :2% 1% 0% 5% ;
+    overflow: hidden;
 }
+
 
 
 /* Banner Area Start*/
@@ -188,3 +192,60 @@ a{
   display: inline-block;
   
 }
+
+
+/*@media(max-width:768px){
+
+    .container {
+        width: 100%;
+        margin: 0;
+    }
+    .logo  {
+        left: 125px;
+    }
+    .banner-area {
+        height: 500px;
+    }
+    .banner-text h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    .banner-text h2 {
+        font-size: 15px;
+    }
+
+
+    .main-content {
+        padding: 50px 20px;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+    }
+    .content-image {
+        height: 200px;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .content-text {
+        padding: 0px 20px;
+        text-align: center;
+    }
+    .content-text h2 {
+        font-size: 35px;
+    }
+
+
+    
+
+
+    
+
+    
+    .footer-image {
+        margin-bottom: 0;
+    }
+    .footer-text {
+        padding: 25px 20px;
+    }
+}
+*/
