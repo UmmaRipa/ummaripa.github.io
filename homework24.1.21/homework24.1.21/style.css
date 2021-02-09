@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;800&display=swap');
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	
+    }
+
+body{
+	font-family:'Poppins', sans-serif;
+	background:#BF97D3;
+	color: #000;
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+a{
+	color: #262626;
+	text-decoration: none;
+}
+/*@media(min-width: 540px){
+		.overlay {
+	display: flex;
+    flex-wrap: wrap;
+}
+@media(min-width: 540px){
+		.main-content {
+	display: flex;
+    flex-wrap: wrap;
+	}*/
+
+
+.container{
+	position: relative;    
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	width: 90%;
+	margin: auto;
+	margin :2% 1% 0% 5% ;
+    overflow: hidden;
+}
+
+
+
+/* Banner Area Start*/
+.banner-area{
+	background: url("images/sky.jpg") no-repeat center center/cover;
+	height: 400px;
+	width: 100%;
+    position: relative;
+    display: flex;
+
+}
+.banner-area:after{
+	background: linear-gradient(90deg, #FECBD2 0%, #BF97D3 50%);
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    
+}
+.banner-content{
+	
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+       
+	
+}
+
+.logo{
+	background: url("images/logo.jpg") no-repeat center center/cover;
+	position: absolute;
+    left: 60px;
+    top: 30px;
+    
+}
+.banner-text{
+	display: flex;
+	flex-direction: column; 
+	align-items:  center;
+	text-align: center;
+	justify-content: center; 
+	flex-basis: 80%;
+	
+}
+.banner-text h1{
+	font-family: 'Poppins';
+    font-weight: 100;
+	margin-bottom: 2px;
+	font-size: 80px;
+	
+
+}
+.banner-text h2{
+	font-size:20px;
+	font-weight: normal;
+	}
+.button-link {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;			
+  border: 1px solid #BF97D3;
+  border-radius: 50px;
+  color: #6B4fbb;
+  padding: 6px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #FCD3E1; 
+  background-image: linear-gradient(to right, #FCD3E1 , #BF97D3);
+}
+.button-link:hover {
+	opacity: 0.9;
+}  
+
+/* Maincontent Area Start*/
+.main-content{
+	display: flex;
+	flex-wrap: wrap;
+
+	align-content: flex-start;
+	width: 100%;
+	height: 400px;
+}
+.content-text{
+	
+	flex-basis: 50%;
+	padding: 60px 60px;
+}
+.content-text h2{
+    font-size: 35px;
+    font-weight: normal;
+    color: #777;
+    margin-bottom: 15px;
+}
+.content-image{
+	
+	background:url("images/dawnsky.jpg");
+	background-size: cover;
+    height: 300px;
+    width: 35%;
+    background-position: center;
+
+    margin-top: 41px;
+    margin-left: 87px;
+    }
+.content-text p, .footer-text p {
+    margin-bottom: 25px;
+}
+
+
+/* Footer Area Start*/
+.footer-image{
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	height: 400px;
+	background: url("images/inrainsky.jpg") no-repeat center center/cover;
+	background-size: cover;
+    background-position:center;
+
+    
+}
+.footer-text {
+    flex-basis: 50%;
+    padding: 90px 65px;
+    color: #fff;
+    }
+.footer-text h2{
+ 	font-size: 35px;
+    font-weight: normal;
+    color: #fff;
+    margin-bottom: 15px;
+    margin-top: -18px;
+}
+.button-bottom {
+  border: 1px solid #fff;
+  border-radius: 50px;
+  color: #fff;
+  padding: 6px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  
+}
+/* Gallary Area Start*/
+
+.gallary {
+    display: flex;
+    padding: 100px 50px;
+    flex-wrap: wrap;
+    background: #fff;
+    justify-content: space-around;
+    margin-bottom: -50px;
+    margin-left: 94px;
+    margin-right: 94px;
+}
+
+
+.gallary-pic {
+    height: 380px;
+    width: 46%;
+    margin-bottom: 50px;
+}
+
+.picture-1{
+    background: url(images/dawnsky.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.picture-2{
+    background: url(images/logo.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.picture-3{
+    background: url( images/inrainsky.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.picture-4{
+    background: url(images/sky.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Contact section */
+
+.contact-section{
+    background: url(images/sky.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+.contact-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #BF97D3 0%, #be5ede 50%);
+    opacity: .8;
+}
+.contact-content{
+
+    z-index: 15;
+    position: relative;
+    padding: 100px 200px;
+    color: #fff;
+    
+}
+.contact-content h1 {
+    font-size: 30px;
+   
+}
+.contact-content{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+.contact-form{
+    display: flex;
+    color: #fff; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.row-1 input[type="text"], .row-1 input[type="email"] {
+    width: 428px;
+    padding: 15px;
+    margin: 0 7px;
+    background: none;
+    outline: none;
+    border: 1px solid #FECBD2;
+    color:#fff;
+    margin-top: 55px;
+}
+textarea{
+    width: 875px;
+    padding: 15px;
+    background: none;
+    outline: none;
+    border: 1px solid #FECBD2;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.contact-content a.message-button{
+  border: 1px solid #FECBD2;
+  border-radius: 50px;
+  color: #fff;
+  padding: 6px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  bottom: 20px;
+  left: 900px;
+}
+
+
+  
+/* Newsletter Area */
+
+.newsletter-Area {
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: #fff;
+}
+.newsletter-Area h1 {font-weight: 200;color: #000  ;font-size: 35px;}
+.newsletter-Area p {color: #455570;}
+
+.newsletter-Area lebel {
+    position: relative;
+}
+input.news-action {
+    width: 600px;
+    padding: 12px 15px;
+    margin: 30px 0;
+    background: #ddd;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+}
+/*Bottom Area */
+.bottom-area {
+    color: #fff;
+    padding: 50px;
+    
+    background: #000;
+}
